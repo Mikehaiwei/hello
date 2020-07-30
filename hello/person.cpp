@@ -2,7 +2,7 @@
 
 void person::PrintMessage()
 {
-    cout<<"乘客姓名："<<name<<"年龄"<<age<<"性别"<<sex<<endl;
+    cout<<"乘客姓名："<<name<<" 年龄:"<<age<<" 性别:"<<sex<<endl;
 }
 
 person::person(string iname,int iage,string isex)
@@ -12,7 +12,9 @@ person::person(string iname,int iage,string isex)
     sex=isex;
 }
 
-void person::resetname(string& newname)
+void person::resetname(string newname)
 {
     name=newname;
 }
+
+person::~person(){}

@@ -11,7 +11,7 @@ class person
     string sex;
     public:
     void PrintMessage();
-    void resetname(string& newname);
+    void resetname(string newname);
     person(string name,int age,string sex);
     ~person();
 };
